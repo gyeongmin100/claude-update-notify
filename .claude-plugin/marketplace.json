@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-update-notify",
+  "description": "SessionStart hook that checks npm for a newer Claude Code release and reminds you to update.",
+  "owner": {
+    "name": "gyeongmin100",
+    "url": "https://github.com/gyeongmin100"
+  },
+  "plugins": [
+    {
+      "name": "claude-update-notify",
+      "description": "Notifies you when a newer Claude Code version is available.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "claude-update-notify",
+  "description": "Checks for a newer Claude Code version on session start and shows an update reminder.",
+  "author": {
+    "name": "gyeongmin100",
+    "url": "https://github.com/gyeongmin100"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "& \"${CLAUDE_PLUGIN_ROOT}/hooks/check-update.ps1\"",
+            "shell": "powershell",
+            "timeout": 30,
+            "statusMessage": "Checking Claude Code version..."
+          }
+        ]
+      }
+    ]
+  }
+}
