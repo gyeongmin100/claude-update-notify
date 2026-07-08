@@ -4,6 +4,21 @@ Claude Code 플러그인. 세션 시작할 때마다 `npm show @anthropic-ai/cla
 
 Windows + PowerShell 필요. npm으로 설치했든 네이티브(`irm`) 설치든 상관없이 작동함 — 둘 다 같은 버전 번호로 배포됨.
 
+## 왜 만들었나
+
+Claude Code 자동 업데이트가 가끔씩 작동을 안 해서, 직접 최신 버전인지 확인하려고 만든 기능임.
+
+## 예시
+
+![예시](assets/example.png)
+
+세션 시작할 때 이런 식으로 알려줌:
+
+```
+SessionStart:startup says: Claude Code 업데이트 가능: 2.1.202 -> 2.1.204
+업데이트하려면 터미널에서 'claude update' 를 실행하세요.
+```
+
 ## 설치
 
 ```
