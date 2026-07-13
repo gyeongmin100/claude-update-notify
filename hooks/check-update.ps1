@@ -7,6 +7,6 @@ if ($current -and $latest -and ($current -ne $latest)) {
     $yellow = "$esc[1m$esc[33m"
     $cyan = "$esc[1m$esc[36m"
     $reset = "$esc[0m"
-    $msg = "Claude Code update available: ${yellow}$current -> $latest${reset}`nRun '${cyan}claude update${reset}' in your terminal to update."
+    $msg = "Claude Code 업데이트 가능: ${yellow}$current -> $latest${reset}`n업데이트하려면 터미널에서 '${cyan}claude update${reset}' 를 실행하세요."
     @{ systemMessage = $msg } | ConvertTo-Json -Compress
 }
