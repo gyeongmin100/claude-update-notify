@@ -1,4 +1,4 @@
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+﻿[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $OutputEncoding = [System.Text.Encoding]::UTF8
 $current = (claude --version 2>$null) -replace '.*?(\d+\.\d+\.\d+).*', '$1'
 $latest = (npm show @anthropic-ai/claude-code version 2>$null).Trim()
